@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark_Orientations</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> let value = UIInterfaceOrientation.LandscapeLeft.rawValue
+        UIDevice.currentDevice().setValue(value, forKey: "orientation")
+   override func supportedInterfaceOrientations() -&gt; UIInterfaceOrientationMask
+    {
+        
+            return UIInterfaceOrientationMask.LandscapeLeft
+  
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8CE7A75F-F3F1-4ED2-A2AF-9C01DF20DB86</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Orientations</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

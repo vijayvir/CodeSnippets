@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark_doc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> /**
+   Initializes a new bicycle with the provided parts and specifications.
+  - 1 BookingViewController: -&gt; assign to  bucketbutton.selected(UIButton)
+        - Parameters:
+            - style: The style of the bicycle
+            - gearing: The gearing of the bicycle
+            - handlebar: The handlebar of the bicycle
+            - frameSize: The frame size of the bicycle, in centimeters
+
+        - Returns: A beautiful, brand-new bicycle, custom built
+          just for you.
+  */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>261DA854-0DAA-4DD0-BED2-B5773BF36729</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mark_Doc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

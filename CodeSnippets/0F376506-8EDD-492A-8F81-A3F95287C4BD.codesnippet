@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark_screen</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>switch UIDevice().screenType
+        {
+        case .iPhone4 :
+            break
+        case .iPhone5 :
+            
+        return 200;
+            
+            
+        case .iPhone6 :
+      
+            break
+        case .iPhone6Plus :
+          break
+          
+        default:
+              return 240;
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0F376506-8EDD-492A-8F81-A3F95287C4BD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mark_screen</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

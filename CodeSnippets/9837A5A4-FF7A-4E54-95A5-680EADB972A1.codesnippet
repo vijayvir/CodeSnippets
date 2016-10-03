@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark_userDefault</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> {
+        get {
+            if let returnValue = NSUserDefaults.standardUserDefaults().objectForKey("time") as? OL_TimerCheckBox {
+                return returnValue
+            } else
+            {
+                return OL_TimerCheckBox.OL_TimerCheckBox_30  //Default value
+            }
+        }
+        set {
+            NSUserDefaults.standardUserDefaults().setObject(newValue, forKey: "time")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9837A5A4-FF7A-4E54-95A5-680EADB972A1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Mark userDefault</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

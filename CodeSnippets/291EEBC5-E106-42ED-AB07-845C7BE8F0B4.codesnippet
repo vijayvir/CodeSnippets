@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark_dispatch_GlobalQueue</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let qualityOfServiceClass = QOS_CLASS_BACKGROUND
+            let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
+            dispatch_async(backgroundQueue, {
+                print("This is run on the background queue")
+                
+                dispatch_async(dispatch_get_main_queue(), { () -&gt; Void in
+                    print("This is run on the main queue, after the previous code in outer block")
+                })
+            })
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>291EEBC5-E106-42ED-AB07-845C7BE8F0B4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

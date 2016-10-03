@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark_tableViewDatasourse</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> 
+    // MARK: Tableview dataSourse &gt; delgate
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int
+    {
+    
+      // FIXME:  Pass number
+        return 9
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell
+    {
+        
+        // FIXME: pass cell identifier 
+        
+        let  cellInndentifierHeader = "InfinteTableViewCell"
+        weak var  cell: InfinteTableViewCell! = tableView.dequeueReusableCellWithIdentifier(cellInndentifierHeader) as! InfinteTableViewCell
+        
+        if((cell) != nil)
+            
+        {
+         
+            return cell
+        }
+        
+        return cell
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F7B0540D-E6C2-411F-B873-218C639ED5B2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mark_tableViewDatasourse</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
