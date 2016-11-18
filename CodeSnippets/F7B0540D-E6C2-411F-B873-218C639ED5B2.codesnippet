@@ -9,33 +9,28 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> 
-    // MARK: Tableview dataSourse &gt; delgate
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int
-    {
-    
-      // FIXME:  Pass number
-        return 9
+	<string> func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 5
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell
     {
+          
+        // FIXME: pass cell identifier
         
-        // FIXME: pass cell identifier 
+        let  cellInndentifierHeader = "UserTableViewCell"
         
-        let  cellInndentifierHeader = "InfinteTableViewCell"
-        weak var  cell: InfinteTableViewCell! = tableView.dequeueReusableCellWithIdentifier(cellInndentifierHeader) as! InfinteTableViewCell
+         let  cell: UserTableViewCell! = tableView.dequeueReusableCell(withIdentifier: cellInndentifierHeader) as! UserTableViewCell
         
         if((cell) != nil)
             
         {
-         
+            
             return cell
         }
         
         return cell
-    }
-</string>
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F7B0540D-E6C2-411F-B873-218C639ED5B2</string>
 	<key>IDECodeSnippetLanguage</key>

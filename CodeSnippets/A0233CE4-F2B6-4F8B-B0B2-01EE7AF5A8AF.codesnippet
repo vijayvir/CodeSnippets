@@ -3,21 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark_delegateDefinations</string>
+	<string>mark_GenricClass</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/*
- " Def Delegate :  A delegate is an object that acts on behalf of, or in coordination with, another object(A) when that object(A) encounters an event in a program." (From Apple's Concepts in Objective Programming document.)
- */</string>
+	<string>//   Generic Class :  Maintain by Vijayvir Singh</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DB8A9350-560F-4140-BB3C-9E029ED0D82E</string>
+	<string>A0233CE4-F2B6-4F8B-B0B2-01EE7AF5A8AF</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Delegate Definations </string>
+	<string>mark_GenricClass</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

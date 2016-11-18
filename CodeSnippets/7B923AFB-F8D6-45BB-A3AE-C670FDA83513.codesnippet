@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark_delegateDefinations</string>
+	<string>mark_rootViewController</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/*
- " Def Delegate :  A delegate is an object that acts on behalf of, or in coordination with, another object(A) when that object(A) encounters an event in a program." (From Apple's Concepts in Objective Programming document.)
- */</string>
+	<string> let keywindow = UIApplication.shared.keyWindow
+        let mainController = keywindow?.rootViewController</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DB8A9350-560F-4140-BB3C-9E029ED0D82E</string>
+	<string>7B923AFB-F8D6-45BB-A3AE-C670FDA83513</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mark_rootViewController</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Delegate Definations </string>
+	<string>mark_rootViewController</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
