@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension UIView
+{
+    func addLocation(_ coordinate: CLLocationCoordinate2D)
+    {
+        // max MKMapPoint values
+        let maxY = Double(267995781)
+        let maxX = Double(268435456)
+
+        let mapPoint = MKMapPointForCoordinate(coordinate)
+
+        let normalizatePointX = CGFloat(mapPoint.x / maxX)
+        let normalizatePointY = CGFloat(mapPoint.y / maxY)
+
+        let pointView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 5))
+        pointView.center = CGPoint(x: normalizatePointX * frame.width, y: normalizatePointY * frame.height)
+
+        pointView.backgroundColor = UIColor.blue
+
+        addSubview(pointView)
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4C8B9A06-C631-4725-B256-90FA5C38A983</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>latLong</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
