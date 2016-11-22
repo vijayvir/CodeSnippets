@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark_pragmaObjectiveC</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark-
+#pragma mark- Outlets
+
+#pragma mark-
+#pragma mark- Variables 
+
+#pragma mark- 
+#pragma mark- CLC
+
+
+#pragma mark-
+#pragma mark- Actions
+
+#pragma mark-
+#pragma mark- semi Actions
+
+
+#pragma mark-
+#pragma mark- Functions </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>87862FB2-9129-48A1-9CE0-71CE5D5440F2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mark_Pragma</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
