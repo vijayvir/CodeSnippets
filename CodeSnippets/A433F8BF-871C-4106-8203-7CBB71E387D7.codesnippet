@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pod_podsHelp</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+    /*
+     POD Install
+     
+     [ 1 ] Open terminal and type:
+     
+     sudo gem install cocoapods
+     Gem will get installed in Ruby inside System library. Or try on 10.11 Mac OSX El Capitan, type:
+     
+     sudo gem install -n /usr/local/bin cocoapods
+     If there is an error "activesupport requires Ruby version &gt;= 2.xx", then install latest activesupport first by typing in terminal.
+     
+     sudo gem install activesupport -v 4.2.6
+     [ 2 ] After installation, there will be a lot of messages, read them and if no error found, it means cocoapods installation is done. Next, you need to setup the cocoapods master repo. Type in terminal:
+     
+     *** ***
+     Citing your conversation in the comments, you'll want to execute
+     sudo rm -fr ~/.cocoapods/repos/master
+     
+     because it'll remove all the bogus and corrupted repos that you have in your computer to give it a chance to repopulate after you redo
+     pod setup
+     ,
+     which'll reinstate you with a fresh Cocoapods setup.
+     
+     ****  *
+     
+     
+     pod setup
+     
+     And wait it will download the master repo. The size is very big (300MB++ at Sept 2016). So it can be a while. You can track of the download by opening Activity and goto Network tab and search for git-remote-https. Alternatively you can try adding verbose to the command like so:
+     
+     
+     
+     
+     pod setup --verbose
+     
+     [ 3 ] Once done it will output "Setup Complete", and you can create your XCode project and save it.
+     
+     
+     
+     Or  Apples-iMac:~ apple$ cd ~/.cocoapods/repos
+     Apples-iMac:repos apple$ git clone https://github.com/CocoaPods/Specs.git master
+     fatal: destination path 'master' already exists and is not an empty directory.
+
+     
+     [ 4 ] Then in terminal cd to "your XCode project root directory" (where your .xcodeproj file resides) and type:
+     
+     pod init
+     
+     [ 5 ] Then open your project's podfile by typing in terminal:
+     
+     open -a Xcode Podfile
+     
+     [ 6 ] Your Podfile will get open in text mode. Initially there will be some default commands in there. Here is where you add your project's dependencies. For example, in the podfile, type
+     
+     pod 'AFNetworking', '0.9.1'
+     
+     (this line is an example of adding the AFNetworking library to your project).
+     
+     Other tips:
+     
+     Uncomment  platform :ios, '8.0' Uncomment  user_frameworks! if you're using Swift
+     
+     When you are done editing the podfile, save it and close XCode.
+     
+     [ 7 ] Then install pods into your project by typing in terminal:
+     
+     pod install
+     
+     Depending how many libraries you added to your podfile for your project, the time to complete this varies. Once completed, there will be a message that says
+     
+     
+     */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A433F8BF-871C-4106-8203-7CBB71E387D7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>podsHelp</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

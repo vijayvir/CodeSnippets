@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>alamofire_ImagewithParameters</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> import Alamofire
+    func uploadImageAndData(){
+        //parameters
+        let parameters :[String: String]  =
+            [
+            "mode": "scene_photo",
+            "apikey": "9aaedbc5-7993-48d6-95f2-d75cc01067b7"]
+        
+        let URL = "https://api.havenondemand.com/1/api/sync/ocrdocument/v1"
+        let image = UIImage(named: "Disprine.png")
+        
+        let filePath = Bundle.main.path(forResource: "Disprine", ofType: "png")
+   
+        
+        
+        let headers: HTTPHeaders = [
+   
+            "Accept": "application/json"
+        ]
+        
+       
+  
+        
+        Alamofire.upload(multipartFormData: { (multipartFormData) in
+            multipartFormData.append(UIImageJPEGRepresentation(image!, 1)!, withName: "file", fileName: "swift_file.jpeg", mimeType: "image/jpeg")
+            for (key, value) in parameters
+            {
+                multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
+            }
+        },
+        to:URL)
+        { (result)
+            in
+            switch result
+            {
+                 case .success(let upload, _, _):
+                
+                         upload.uploadProgress(closure:
+                            { (progress) in
+                                //Print progress
+                            }
+                          )
+                
+                         upload.responseJSON
+                         { response in
+                            
+                            if let JSON = response.result.value
+                            {
+                                print("JSON: \(JSON )")
+                            }
+                            
+                          }
+                case .failure(let encodingError):
+                 print(encodingError.localizedDescription)
+                
+                
+                //print encodingError.description
+            }
+        
+        }
+       
+    }
+        </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D46211B9-536B-4BF8-AA8A-23BAA38B1869</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Alamofire</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
