@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>facebook_plist_1</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;key&gt;CFBundleURLTypes&lt;/key&gt;
+    &lt;array&gt;
+    &lt;dict&gt;
+    &lt;key&gt;CFBundleURLSchemes&lt;/key&gt;
+    &lt;array&gt;
+    &lt;string&gt;fb1797018097252618&lt;/string&gt;
+    &lt;/array&gt;
+    &lt;/dict&gt;
+    &lt;/array&gt;
+    &lt;key&gt;FacebookAppID&lt;/key&gt;
+    &lt;string&gt;1797018097252618&lt;/string&gt;
+    &lt;key&gt;FacebookDisplayName&lt;/key&gt;
+    &lt;string&gt;TriusDemoApp&lt;/string&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D8B72FAB-F7EE-4D00-9FDB-A1D98E12C18B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Configure your info.plist</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>facebook_Plist1_configure</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

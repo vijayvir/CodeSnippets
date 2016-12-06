@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>facebook_plist2_dialogs</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;key&gt;LSApplicationQueriesSchemes&lt;/key&gt;
+    &lt;array&gt;
+    &lt;string&gt;fbapi&lt;/string&gt;
+    &lt;string&gt;fb-messenger-api&lt;/string&gt;
+    &lt;string&gt;fbauth2&lt;/string&gt;
+    &lt;string&gt;fbshareextension&lt;/string&gt;
+    &lt;/array&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C1C59080-4BE1-46C9-8622-3007B9850CD3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>If you use any of the Facebook dialogs (e.g., Login, Share, App Invites, etc.) that can perform an app switch to Facebook apps, your application's .plist also need to handle this.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Facebook_Plist_dialogs</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

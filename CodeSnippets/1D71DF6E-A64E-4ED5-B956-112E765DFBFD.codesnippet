@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pods_installation</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> /*
+     ******INSTALL COCOA PODS *************
+     
+     1. Uninstall CocoaPods (choose to uninstall all versions):
+     
+     sudo gem uninstall cocoapods
+     
+     2. Remove old master repo:
+     sudo rm -fr ~/.cocoapods/repos/master
+     
+     3. Install CocoaPods with sudo:
+     sudo gem install cocoapods
+     OR
+     sudo gem install -n /usr/local/bin cocoapods
+     
+     4. Setup CocoaPods and Master repo:
+     pod setup
+          OR
+     pod setup
+     Ctrl +C
+     pod repo remove master
+     cd ~/.cocoapods/repos
+     git clone https://github.com/CocoaPods/Specs master
+     
+     
+     
+     */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1D71DF6E-A64E-4ED5-B956-112E765DFBFD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>COCOAPODS : uninstall and install</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pods Install commands </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
