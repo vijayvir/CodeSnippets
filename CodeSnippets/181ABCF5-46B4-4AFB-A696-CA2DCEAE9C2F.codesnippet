@@ -3,13 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark_modelLinks</string>
+	<string>mark_architectureModelLinks</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string> //https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52#.4qy6umyox
+
+http://www.seguetech.com/xml-vs-json-based-web-services-which-is-the-best-choice/
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>181ABCF5-46B4-4AFB-A696-CA2DCEAE9C2F</string>

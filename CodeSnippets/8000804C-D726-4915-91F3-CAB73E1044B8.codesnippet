@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>svn_helpkit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>StringOrComment</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+/*
+ Help kit  for Xcode to SVN
+ SVN to Mac
+ 
+ 1 -&gt; Make your Repository in Preferecence and auth your Svn account
+ 
+ Now we have to import our project to SVN
+ 
+ 
+ For this we have to write  commands  in the terminal
+ 
+ Command Structure is
+ 
+ -&gt; cd to forlder where is your project Placed
+ 
+ -&gt; svn import -m "CommitName"  nameOfFolderWhereProjectIsPlaced/ SVN_repositoryLinkHere
+ 
+ Eg: Command use : Apples-iMac:IOS apple$ svn import -m "warnUpT_IOS" WarnUpSourceCode/ http://192.168.32.197/usvn/svn/warnup_ios/trunk
+ 
+ Now your Project is Uploaded on server SVN Repository
+ 
+ ------------------  SVN to Xcode------------------------
+ Now restart Xcode ,for download your project from SVN ,for that
+ 
+ - click on SourceControll and Checkouts
+ - select your Repository
+ - select the path where you want to download your project
+ 
+ Project will automatically open , Make sure if is workspace or other
+ 
+ 
+ For more help
+ 
+ https://www.youtube.com/watch?v=TkTUjMZWJIM
+ 
+ 
+ */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8000804C-D726-4915-91F3-CAB73E1044B8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SVN svn_helpkit</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
