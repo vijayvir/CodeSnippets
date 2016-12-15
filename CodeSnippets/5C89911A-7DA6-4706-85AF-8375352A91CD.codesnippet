@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>plist_camera</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> &lt;key&gt;NSCameraUsageDescription&lt;/key&gt;
+ &lt;string&gt;Access needed to use your camera.&lt;/string&gt;
+ 
+ &lt;key&gt;NSPhotoLibraryUsageDescription&lt;/key&gt;
+ &lt;string&gt;Access needed to photo gallery.&lt;/string&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5C89911A-7DA6-4706-85AF-8375352A91CD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>plist_camera&amp;Photo</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark_userSessionAppdelgate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> var  userSesion : UserSession?
+    {
+        get
+        {
+            if (UserDefaults.standard.object(forKey:"userSesion") != nil)
+            {
+                
+            let user = UserDefaults.standard.object(forKey: "userSesion")  as AnyObject
+                
+                return  UserSession(userId: user["userId"] as! String, token: user["token"] as! String , isPhoneVerify : user["isPhoneVerify"] as! Bool , type : user["type"] as! String)
+                
+            }
+       
+            else
+            {
+                     return nil
+            }
+        }
+        
+        set
+        {
+                print(type(of: newValue) , newValue)
+            
+               UserDefaults.standard.set( newValue?.toJsonObect() ,forKey: "userSesion")
+        }
+
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D993E3B7-E768-4DCF-8D16-82FE3189E8C1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mark_userSessionAppdelgate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>plist_Security</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  &lt;key&gt;NSAppTransportSecurity&lt;/key&gt;
+    &lt;dict&gt;
+    &lt;key&gt;NSExceptionDomains&lt;/key&gt;
+    &lt;dict&gt;
+    &lt;key&gt;yourserver.com&lt;/key&gt;
+    &lt;dict&gt;
+    &lt;!--Include to allow subdomains--&gt;
+    &lt;key&gt;NSIncludesSubdomains&lt;/key&gt;
+    &lt;true/&gt;
+    &lt;!--Include to allow HTTP requests--&gt;
+    &lt;key&gt;NSTemporaryExceptionAllowsInsecureHTTPLoads&lt;/key&gt;
+    &lt;true/&gt;
+    &lt;!--Include to specify minimum TLS version--&gt;
+    &lt;key&gt;NSTemporaryExceptionMinimumTLSVersion&lt;/key&gt;
+    &lt;string&gt;TLSv1.1&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;/dict&gt;
+    &lt;/dict&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>38F132C4-051D-4805-992A-081F1B98F770</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>plist_Security</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

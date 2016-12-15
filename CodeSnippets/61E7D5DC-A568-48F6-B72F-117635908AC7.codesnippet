@@ -9,58 +9,63 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-    /*
-     
-     source 'https://github.com/CocoaPods/Specs.git'
-     platform :ios, '9.0'
-     
-     target 'Test' do
-     
-     use_frameworks!
-     
-       #  Networking
-     
-     #    pod 'Alamofire', '~&gt; 4.0'
-     pod 'Alamofire', :git =&gt; 'https://github.com/Alamofire/Alamofire.git'
-     
-     #    pod 'SwiftyJSON' , '~&gt; 3.1'
-     pod 'SwiftyJSON', :git =&gt; 'https://github.com/SwiftyJSON/SwiftyJSON.git'
-     
-     #     pod 'SideMenu' '~&gt; 2.0'
-     pod 'SideMenu', :git =&gt; 'https://github.com/jonkykong/SideMenu.git'
-     
-     
-     
-     #     pod 'SDWebImage', '4.0.0-beta2'
-     pod 'SDWebImage', :git =&gt; 'https://github.com/rs/SDWebImage.git'
-     
-     #     pod 'SwiftDate', '~&gt; 4.0'
-     pod 'SwiftDate', :git =&gt; 'https://github.com/malcommac/SwiftDate'
-     
-     
-     pod 'FolioReaderKit', :git =&gt; 'https://github.com/FolioReader/FolioReaderKit'
-     
-     pod 'Bolts-Swift', :git =&gt; 'https://github.com/BoltsFramework/Bolts-Swift'
-     
-      #  Socail
-     pod 'FacebookCore', :git =&gt; 'https://github.com/facebook/facebook-sdk-swift.git'
-     
-     pod 'FacebookLogin', :git =&gt; 'https://github.com/facebook/facebook-sdk-swift.git'
-     
-     
-     
-     end
-     
-     post_install do |installer|
-     installer.pods_project.targets.each do |target|
-     target.build_configurations.each do |config|
-     config.build_settings['SWIFT_VERSION'] = '3.0'
-     end
-     end
-     end
-     
-     */</string>
+	<string> /*
+         
+         source 'https://github.com/CocoaPods/Specs.git'
+         platform :ios, '9.0'
+         
+         target 'Test' do
+         
+         use_frameworks!
+         
+         
+         #  Networking
+         
+         #    pod 'Alamofire', '~&gt; 4.0'
+         pod 'Alamofire', :git =&gt; 'https://github.com/Alamofire/Alamofire.git'
+         
+         #    pod 'SwiftyJSON' , '~&gt; 3.1'
+         pod 'SwiftyJSON', :git =&gt; 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+         
+         #     pod 'SideMenu' '~&gt; 2.0'
+         pod 'SideMenu', :git =&gt; 'https://github.com/jonkykong/SideMenu.git'
+         
+         
+         
+         #     pod 'SDWebImage', '4.0.0-beta2'
+         pod 'SDWebImage', :git =&gt; 'https://github.com/rs/SDWebImage.git'
+         
+         #     pod 'SwiftDate', '~&gt; 4.0'
+         pod 'SwiftDate', :git =&gt; 'https://github.com/malcommac/SwiftDate'
+         
+         
+         pod 'FolioReaderKit', :git =&gt; 'https://github.com/FolioReader/FolioReaderKit'
+         
+         pod 'Bolts-Swift', :git =&gt; 'https://github.com/BoltsFramework/Bolts-Swift'
+         
+         #  Socail
+         pod 'FacebookCore', :git =&gt; 'https://github.com/facebook/facebook-sdk-swift.git'
+         
+         pod 'FacebookLogin', :git =&gt; 'https://github.com/facebook/facebook-sdk-swift.git'
+         
+         
+         pod 'FacebookCore'
+         pod 'FacebookLogin'
+         pod 'FacebookShare'
+         pod 'Google/SignIn'
+         
+         
+         end
+         
+         post_install do |installer|
+         installer.pods_project.targets.each do |target|
+         target.build_configurations.each do |config|
+         config.build_settings['SWIFT_VERSION'] = '3.0'
+         end
+         end
+         end
+         
+         */</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>61E7D5DC-A568-48F6-B72F-117635908AC7</string>
 	<key>IDECodeSnippetLanguage</key>
