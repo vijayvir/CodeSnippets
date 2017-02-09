@@ -3,23 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>plist_camera</string>
+	<string>mark_selector</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> &lt;key&gt;NSCameraUsageDescription&lt;/key&gt;
- &lt;string&gt;Access needed to use your camera.&lt;/string&gt;
- 
- &lt;key&gt;NSPhotoLibraryUsageDescription&lt;/key&gt;
- &lt;string&gt;Access needed to photo gallery.&lt;/string&gt;</string>
+	<string>#selector(self.onDismiss(_:))</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5C89911A-7DA6-4706-85AF-8375352A91CD</string>
+	<string>4B780C95-EB8E-4030-9A72-09556974AE4B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>plist_camera&amp;Photo</string>
+	<string>mark_selector</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

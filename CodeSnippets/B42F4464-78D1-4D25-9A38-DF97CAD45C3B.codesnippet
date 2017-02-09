@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mark_collectionViewDatasourse</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension PrescriptionViewController : UICollectionViewDataSource, UICollectionViewDelegate
+{
+    
+    func configureCollectionView(isNib:Bool = false)
+    {
+        if isNib
+        {
+            collectionView.register(UINib(nibName: "GalleryCell", bundle:nil), forCellWithReuseIdentifier: "SomeIdentifier")
+        }
+        else
+        {
+            collectionView.register(PhotoCell.self,forCellWithReuseIdentifier:"PhotoCell");
+        }
+        
+    }
+    
+    //1
+    func numberOfSections(in collectionView: UICollectionView) -&gt; Int
+    {
+        return images.count
+    }
+    
+    //2
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -&gt; Int
+    {
+        return 1
+    }
+    
+    //3
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell
+    {
+        let  identifier = "PhotoCell";
+        
+          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! PhotoCell
+        
+        
+        
+        cell.backgroundColor = UIColor.black
+        // Configure the cell
+        return cell
+    }
+}
+
+class PhotoCell : UICollectionViewCell
+{
+   
+    
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B42F4464-78D1-4D25-9A38-DF97CAD45C3B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mark_collectionViewDatasourse</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

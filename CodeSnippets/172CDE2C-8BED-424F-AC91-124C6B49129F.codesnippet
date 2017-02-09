@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>webService</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+                 LeoHud.show(delegate: self)
+                
+                
+                  WebServices.post(jsonObject: user.toJsonObect(), completionHandler:
+                    {(
+                        response :  AnyObject , succes :AnyObject) in
+                        
+                        print("\(response)" , succes)
+                        
+                        LeoHud.hide(delegate: self)
+                        
+                        
+                        
+                        if let  status = response["status"] as! Int?
+                        {
+                            
+                            if let  status =  Status(rawValue: status)
+                            {
+                                
+                                switch status
+                                {
+                                case .success:
+                                    
+                                    DispatchQueue.main.async
+                                    {
+                                    }
+                                    
+                                case .failure:
+                                    
+                                    
+                                    self.showAlert(response["message"] as! String ,completionHandler:
+                                        {
+                                            
+                                            
+                                     })
+                                    
+                                    
+                                case .deadlock:
+                                   
+                                    self.showAlert(response["message"] as! String ,completionHandler:
+                                        {
+                                            
+                                            
+                                    })
+                                    
+                                default : break
+                                    
+                                    
+                                    
+                                }
+                                
+                                
+                            }
+                            
+                        }
+            
+                        
+           
+                },
+                                 failureHandler:
+                    { ( response :  AnyObject , status :AnyObject) in
+                        
+                        
+                         LeoHud.hide(delegate: self)
+                })
+                
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>172CDE2C-8BED-424F-AC91-124C6B49129F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>webService</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

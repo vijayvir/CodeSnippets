@@ -3,23 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>plist_camera</string>
+	<string>mark_mirrorfunctions</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> &lt;key&gt;NSCameraUsageDescription&lt;/key&gt;
- &lt;string&gt;Access needed to use your camera.&lt;/string&gt;
- 
- &lt;key&gt;NSPhotoLibraryUsageDescription&lt;/key&gt;
- &lt;string&gt;Access needed to photo gallery.&lt;/string&gt;</string>
+	<string>    for case let (label?, value) in Mirror(reflecting: some).children
+            {
+               
+ }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5C89911A-7DA6-4706-85AF-8375352A91CD</string>
+	<string>B20F1369-D487-4BCF-9823-BB339A635F54</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>plist_camera&amp;Photo</string>
+	<string>mirroeFunctions</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

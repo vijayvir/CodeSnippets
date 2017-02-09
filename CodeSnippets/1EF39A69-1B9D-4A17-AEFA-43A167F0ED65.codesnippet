@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pefect_serverDemo</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>StringOrComment</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//===----------------------------------------------------------------------===//
+//
+import PerfectLib
+import PerfectHTTP
+import PerfectHTTPServer
+
+
+// Create HTTP server.
+let server = HTTPServer()
+
+// Set the webroot directory so static files such as the logo, can be served
+server.documentRoot = "./webroot"
+
+// Create the container variable for routes to be added to.
+var routes = Routes()
+
+// Adding a route to handle the root list
+routes.add(method: .get, uri: "/", handler: {
+    _, response in
+
+    response.setHeader(.contentType, value: "text/html")
+    response.appendBody(string: "&lt;html&gt;&lt;title&gt;Hello, world!&lt;/title&gt;&lt;body&gt;Hello, world!&lt;/body&gt;&lt;/html&gt;")
+    response.completed()
+
+}
+)
+
+// Serve a story
+
+// Add the routes to the server.
+server.addRoutes(routes)
+
+// Set a listen port of 8181
+server.serverPort = 8181
+
+do {
+    // Launch the HTTP server.
+    try server.start()
+} catch PerfectError.networkError(let err, let msg) {
+    print("Network error thrown: \(err) \(msg)")
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1EF39A69-1B9D-4A17-AEFA-43A167F0ED65</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Perfect Start server </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  \0 – Null character (that is a zero after the slash)
+        \\ – Backslash itself.  Since the backslash is used to escape other characters, it needs a special escape to actually print itself.
+        \t  – Horizontal tab
+        \n – Line Feed
+        \r  – Carriage Return
+        \”  – Double quote.  Since the quotes denote a String literal, this is necessary if you actually want to print one.
+        \’  – Single Quote.  Similar reason to above.</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>224341C9-F43C-4C80-8D7A-D303EC7A1BCF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mark_SpecialCharater</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

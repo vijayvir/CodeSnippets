@@ -2,24 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>plist_camera</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> &lt;key&gt;NSCameraUsageDescription&lt;/key&gt;
- &lt;string&gt;Access needed to use your camera.&lt;/string&gt;
- 
- &lt;key&gt;NSPhotoLibraryUsageDescription&lt;/key&gt;
- &lt;string&gt;Access needed to photo gallery.&lt;/string&gt;</string>
+	<string>//                    
+//                    let foundIds  = list.memberList.map({ (member :MemberList.Member) -&gt; String in
+//                        return member.tz.tzLeo()
+//                    })
+//                    
+//                      let some = Set(foundIds)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5C89911A-7DA6-4706-85AF-8375352A91CD</string>
+	<string>241A7478-202F-4474-AF9D-F852000FD62D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>map filter reduce </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>plist_camera&amp;Photo</string>
+	<string>map filter reduce </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
